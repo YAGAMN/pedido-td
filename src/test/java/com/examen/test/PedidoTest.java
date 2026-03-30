@@ -31,8 +31,8 @@ public class PedidoTest {
 
     @Test
     void montoInvalido() {
-        Pedido p = new Pedido("P123", "Juan", 10, 0, LocalDate.now());
-        assertEquals("El monto total debe ser mayor a cero", p.validar());
+        Pedido p = new Pedido("P123", "Juan", 10, -50.0, LocalDate.now());
+        assertEquals("El monto debe ser mayor a cero", p.validar());
     }
 
     @Test

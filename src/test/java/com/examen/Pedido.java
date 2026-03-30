@@ -40,7 +40,7 @@ public class Pedido {
 
         // Monto
         if (monto <= 0) {
-            return "El monto total debe ser mayor a cero";
+            return "El monto debe ser mayor a cero";
         }
 
         // Fecha
